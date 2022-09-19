@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 16px;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     font-weight: 400;
   }
 
