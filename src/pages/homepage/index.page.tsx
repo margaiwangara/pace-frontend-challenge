@@ -90,7 +90,7 @@ function HomePage() {
                   left:
                     objectOfExistingEvents[ev.start] === 1
                       ? 0
-                      : objectOfExistingEvents[ev.start] * 50,
+                      : (objectOfExistingEvents[ev.start] - 1) * 100,
                 }}
               >
                 <span>{ev.title}</span>

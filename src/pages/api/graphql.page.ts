@@ -1,4 +1,4 @@
-import { createServer } from "@graphql-yoga/node";
+import { createServer } from '@graphql-yoga/node';
 
 const typeDefs = /* GraphQL */ `
   type Event {
@@ -19,33 +19,39 @@ const resolvers = {
       return [
         {
           id: 1,
-          title: "Call with Bob",
+          title: 'Call with Bob',
           start: 420,
           end: 440,
         },
         {
           id: 2,
-          title: "Lunch",
+          title: 'Lunch',
           start: 720,
           end: 780,
         },
         {
           id: 3,
-          title: "Meeting with Claire",
+          title: 'Meeting with Claire',
           start: 780,
           end: 840,
         },
         {
           id: 4,
-          title: "Review OKRs",
+          title: 'Review OKRs',
           start: 870,
           end: 900,
         },
         {
           id: 5,
-          title: "Interview Ahmed",
+          title: 'Interview Ahmed',
           start: 870,
           end: 930,
+        },
+        {
+          id: 6,
+          title: 'Test Event',
+          start: 870,
+          end: 1050,
         },
       ];
     },
@@ -57,7 +63,7 @@ const server = createServer({
     typeDefs,
     resolvers,
   },
-  endpoint: "/api/graphql",
+  endpoint: '/api/graphql',
   // graphiql: false // uncomment to disable GraphiQL
 });
 
